@@ -14,6 +14,7 @@ import { LandingFAQ } from './components/landing/LandingFAQ'
 import { LandingMakers } from './components/landing/LandingMakers'
 import { LandingFinalCTA } from './components/landing/LandingFinalCTA'
 import { LandingFooter } from './components/landing/LandingFooter'
+import { CookieBanner } from './components/CookieBanner'
 import { useReveal } from './hooks/useReveal'
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <LandingMakers />
       <LandingFinalCTA />
       <LandingFooter />
+      <CookieBanner />
     </>
   )
 }
