@@ -10,7 +10,7 @@ const COLUMNS = [
   { title: 'Recursos', links: [
     { label: 'FAQ', href: '#faq' },
     { label: 'Ver demo real', href: DEMO_REAL },
-    { label: 'Soporte', href: 'mailto:soporte@ranquea.com' },
+    { label: 'Soporte', href: 'mailto:desarrollo@ceustack.com' },
   ] },
   { title: 'Legal', links: [
     { label: 'Aviso legal', href: '/aviso-legal.html' },
@@ -18,8 +18,8 @@ const COLUMNS = [
     { label: 'Cookies', href: '/politica-de-cookies.html' },
   ] },
   { title: 'Contacto', links: [
-    { label: 'Solicita tu demo', href: 'mailto:info@ranquea.com?subject=Quiero%20una%20demo%20de%20Ranquea' },
-    { label: 'info@ranquea.com', href: 'mailto:info@ranquea.com' },
+    { label: 'Solicita tu demo', href: 'mailto:desarrollo@ceustack.com?subject=Quiero%20una%20demo%20de%20Ranquea' },
+    { label: 'desarrollo@ceustack.com', href: 'mailto:desarrollo@ceustack.com' },
   ] },
 ]
 

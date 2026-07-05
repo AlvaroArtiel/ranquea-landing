@@ -51,7 +51,7 @@ export function LandingNav() {
             Ver caso real
           </a>
           <a
-            href="mailto:info@ranquea.com?subject=Quiero%20una%20demo%20de%20Ranquea"
+            href="mailto:desarrollo@ceustack.com?subject=Quiero%20una%20demo%20de%20Ranquea"
             className="px-4 py-2 rounded-lg text-[13px] font-semibold transition-transform hover:-translate-y-0.5"
             style={{ background: 'var(--brand)', color: 'var(--on-brand)' }}
           >

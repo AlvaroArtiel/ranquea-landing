@@ -36,7 +36,7 @@ export function LandingFeatureGallery() {
             </ul>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="mailto:info@ranquea.com?subject=Quiero%20una%20demo%20de%20Ranquea"
+                href="mailto:desarrollo@ceustack.com?subject=Quiero%20una%20demo%20de%20Ranquea"
                 className="inline-block px-5 py-2.5 rounded-lg font-semibold text-[14px] transition-transform hover:-translate-y-0.5 text-center"
                 style={{ background: 'var(--brand)', color: 'var(--on-brand)' }}
               >

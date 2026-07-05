@@ -31,7 +31,7 @@ export function LandingPricing() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="mailto:info@ranquea.com?subject=Quiero%20un%20plan%20para%20mi%20liga"
+                  href="mailto:desarrollo@ceustack.com?subject=Quiero%20un%20plan%20para%20mi%20liga"
                   className="inline-block px-6 py-3 rounded-xl font-bold text-[15px] transition-transform hover:-translate-y-0.5 text-center"
                   style={{ background: 'var(--brand)', color: 'var(--on-brand)' }}
                 >

@@ -36,7 +36,7 @@ export function LandingHero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-5">
               <a
-                href="mailto:info@ranquea.com?subject=Quiero%20una%20demo%20de%20Ranquea"
+                href="mailto:desarrollo@ceustack.com?subject=Quiero%20una%20demo%20de%20Ranquea"
                 className="px-7 py-3.5 rounded-xl font-bold text-[15px] transition-transform hover:-translate-y-0.5"
                 style={{ background: 'var(--brand)', color: 'var(--on-brand)' }}
               >
