@@ -8,9 +8,11 @@
 3. **Sustituir el placeholder**: pasar el `GTM-…` a Claude (o buscar `GTM-XXXXXXX` en
    `index.html`, `public/aviso-legal.html`, `public/politica-de-privacidad.html`,
    `public/politica-de-cookies.html`), rebuild y redeploy.
-4. **GA4**: analytics.google.com → Crear propiedad «Ranquea» → flujo web `https://ranquea.com` → copiar `G-…`.
-5. **Medir con GA4**: en GTM, editar la variable «GA4 Measurement ID» y poner el `G-…`
-   real (sustituye a `G-XXXXXXXXXX`) → Enviar/Publicar el contenedor.
+4. **GA4**: ✅ hecho (2026-07-05) — propiedad creada, ID de medición `G-BVXLVTT7GF`,
+   ya incrustado en `docs/gtm-container-ranquea.json` (la variable «GA4 Measurement ID»).
+5. **Medir con GA4**: tras importar el contenedor (paso 2), solo queda Enviar/Publicar en GTM.
+   NO pegar el snippet gtag.js que muestra GA4 al crear la propiedad: la medición va vía GTM
+   y pegarlo duplicaría hits y saltaría el Consent Mode.
 6. **Search Console**: ✅ hecho (2026-07-05).
 7. **Comprobar**: con GTM publicado y cookies aceptadas en ranquea.com, ver en GA4 → Informes
    en tiempo real que aparece la visita.
