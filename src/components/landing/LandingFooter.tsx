@@ -13,8 +13,9 @@ const COLUMNS = [
     { label: 'Soporte', href: 'mailto:soporte@ranquea.com' },
   ] },
   { title: 'Legal', links: [
-    { label: 'Términos', href: '#' },
-    { label: 'Privacidad', href: '#' },
+    { label: 'Aviso legal', href: '/aviso-legal.html' },
+    { label: 'Privacidad', href: '/politica-de-privacidad.html' },
+    { label: 'Cookies', href: '/politica-de-cookies.html' },
   ] },
   { title: 'Contacto', links: [
     { label: 'Solicita tu demo', href: 'mailto:info@ranquea.com?subject=Quiero%20una%20demo%20de%20Ranquea' },
@@ -50,7 +51,10 @@ export function LandingFooter() {
         </div>
 
         <div className="border-t border-[var(--border-subtle)] pt-7 text-center">
-          <p className="text-[var(--text-faint)] text-[12px]">© 2026 Ranquea · Hecho con cariño en Ceuta, España</p>
+          <p className="text-[var(--text-faint)] text-[12px]">
+            © 2026 Ranquea · Hecho con cariño en Ceuta, España · Ranquea es un producto de{' '}
+            <a href="https://ceustack.com" rel="noopener" className="font-semibold text-[var(--text-secondary)] hover:text-[var(--brand)] transition-colors">Ceustack</a>
+          </p>
         </div>
       </div>
     </footer>
