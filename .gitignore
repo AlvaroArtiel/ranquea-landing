@@ -3,3 +3,7 @@ dist/
 deploy/
 *.log
 .fuse_hidden*
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.superpowers/
