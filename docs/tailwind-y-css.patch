@@ -1,0 +1,76 @@
+diff --git a/src/App.css b/src/App.css
+index f90339d..f3bcdbb 100644
+--- a/src/App.css
++++ b/src/App.css
+@@ -182,3 +182,35 @@
+     border-right-color: var(--border);
+   }
+ }
++
++/* === RANQUEA LANDING ANIMATIONS === */
++
++@keyframes ranquea-photo-reveal {
++  0%   { opacity: 0; transform: scale(0.95); }
++  100% { opacity: 1; transform: scale(1); }
++}
++
++@keyframes ranquea-vote-pulse {
++  0%, 100% { transform: scale(1); }
++  50%      { transform: scale(1.06); }
++}
++
++@keyframes ranquea-ranking-update {
++  0%   { transform: translateX(-4px); }
++  50%  { transform: translateX(2px); }
++  100% { transform: translateX(0); }
++}
++
++@keyframes ranquea-badge-pop {
++  0%   { opacity: 0; transform: scale(0.6); }
++  100% { opacity: 1; transform: scale(1); }
++}
++
++/* Respect prefers-reduced-motion */
++@media (prefers-reduced-motion: reduce) {
++  * {
++    animation-duration: 0.01ms !important;
++    animation-iteration-count: 1 !important;
++    transition-duration: 0.01ms !important;
++  }
++}
+diff --git a/tailwind.config.ts b/tailwind.config.ts
+index 0de8b98..897e81a 100644
+--- a/tailwind.config.ts
++++ b/tailwind.config.ts
+@@ -7,6 +7,31 @@ export default {
+       fontFamily: {
+         sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+       },
++      animation: {
++        'photo-reveal': 'ranquea-photo-reveal 500ms ease-out',
++        'vote-pulse': 'ranquea-vote-pulse 800ms ease-in-out infinite',
++        'ranking-update': 'ranquea-ranking-update 500ms ease-out',
++        'badge-pop': 'ranquea-badge-pop 400ms ease-out',
++      },
++      keyframes: {
++        'ranquea-photo-reveal': {
++          '0%': { opacity: '0', transform: 'scale(0.95)' },
++          '100%': { opacity: '1', transform: 'scale(1)' },
++        },
++        'ranquea-vote-pulse': {
++          '0%, 100%': { transform: 'scale(1)' },
++          '50%': { transform: 'scale(1.06)' },
++        },
++        'ranquea-ranking-update': {
++          '0%': { transform: 'translateX(-4px)' },
++          '50%': { transform: 'translateX(2px)' },
++          '100%': { transform: 'translateX(0)' },
++        },
++        'ranquea-badge-pop': {
++          '0%': { opacity: '0', transform: 'scale(0.6)' },
++          '100%': { opacity: '1', transform: 'scale(1)' },
++        },
++      },
+     },
+   },
+ } satisfies Config
