@@ -4,18 +4,20 @@ Landing page one-page para Ranquea (plataforma de ligas fotográficas gamificada
 
 ## 🚀 Quick Start
 
+Usa Node.js 24 LTS (validado con 24.14.0) y el archivo `package-lock.json` para instalaciones reproducibles.
+
 ```bash
 # Instalar dependencias
-bun install
+npm ci
 
 # Desarrollo
-bun run dev
+npm run dev
 
 # Build para producción
-bun run build
+npm run build
 
 # Preview del build
-bun run preview
+npm run preview
 ```
 
 ## 📁 Estructura
@@ -69,7 +71,7 @@ ranquea/
 
 ```bash
 # 1. Build
-bun run build
+npm run build
 
 # 2. Crear .htaccess (ya existe)
 
@@ -81,11 +83,18 @@ El archivo `.htaccess` ya maneja React Router y rewrite de URLs.
 ## ✅ Verificación
 
 ```bash
-bun run tsc -b    # TypeScript check
-bun run build     # Build check
-bun run lint      # Linting
+npx tsc -b    # TypeScript check
+npm run build     # Build check
+npm run lint      # Linting
 ```
 
 ---
 
 **Status:** ✅ Listo para producción
+
+## Configuración local y dependencias
+
+- `.mcp.json` y los archivos `.env` son configuración privada local y están excluidos de Git. Configura los accesos MCP mediante variables de entorno o el gestor de secretos del cliente; nunca guardes tokens en archivos versionados.
+- Esta landing no necesita credenciales para instalarse, compilarse ni ejecutarse. Las variables `VITE_*` se incluyen en el navegador: no deben contener secretos.
+- ESLint 10 y typescript-eslint usan temporalmente overrides de `minimatch` 11.0.4 para corregir GHSA-g3hv-75wg-m249. Se limitan a ESLint, su config-array y typescript-estree, que consumen las API con nombre disponibles en esta versión. Revisa y elimina los overrides cuando las dependencias incorporen una versión corregida por sí mismas.
+- Antes de publicar cambios, ejecuta `npm audit`, `npm run build` y `npm run lint`.

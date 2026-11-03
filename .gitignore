@@ -7,3 +7,9 @@ deploy/
 vite.config.js
 vite.config.d.ts
 .superpowers/
+
+# Local credentials and environment configuration
+.mcp.json
+.env
+.env.*
+!.env.example
